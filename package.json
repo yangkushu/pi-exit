@@ -1,0 +1,41 @@
+{
+  "name": "@yangkushu/pi-exit",
+  "version": "0.1.0",
+  "description": "Pi extension that adds /exit as an alias of /quit.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "exit",
+    "quit"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangkushu/pi-exit.git"
+  },
+  "homepage": "https://github.com/yangkushu/pi-exit#readme",
+  "bugs": {
+    "url": "https://github.com/yangkushu/pi-exit/issues"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/exit.ts"
+    ]
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ]
+}
